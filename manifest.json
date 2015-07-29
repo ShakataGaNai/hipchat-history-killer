@@ -1,0 +1,15 @@
+{
+  "name": "Kill Hipchat",
+  "version": "0.9.0",
+  "manifest_version": 2,
+  "description": "",
+  "homepage_url": "https://snowulf.net",
+  "default_locale": "en",
+  "content_scripts": [
+    {
+      "matches": ["https://*.hipchat.com/history/member/*/*/*/*"],
+      "js": ["js/jquery-2.1.4.min.js", "js/killhist.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
